@@ -1,12 +1,13 @@
-const downloadedContent = document.getElementById('downloadedContent');
-
+const dC = document.getElementById('downloadedContent');
 
 function newDownload(url) {
-    downloadedContent.appendChild(`<a href="${url}"></a>`);
-};
-
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.textContent = `${url}`;
+    dC.appendChild(anchor);
+}
 
 function downloadVideo() {
-    const videoUrl = document.getElementById('videoUrl').value;
-    newDownload(videoUrl.trim());
-};
+    const videoUrl = document.getElementById('videoUrl').value.trim();
+    newDownload(videoUrl);
+}

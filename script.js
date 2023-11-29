@@ -1,4 +1,6 @@
 const dC = document.getElementById('downloadedContent');
+const downVid = document.getElementById('downVid');
+const downAud = document.getElementById('downAud')
 
 function newDownload(url) {
     const anchor = document.createElement('a');

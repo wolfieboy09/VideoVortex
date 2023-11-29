@@ -7,6 +7,6 @@ function newDownload(url) {
 
 
 function downloadVideo() {
-    const videoUrl = document.getElementById('videoUrl').value.trim();
-    newDownload(videoUrl);
-}
+    const videoUrl = document.getElementById('videoUrl').value;
+    newDownload(videoUrl.trim());
+};
